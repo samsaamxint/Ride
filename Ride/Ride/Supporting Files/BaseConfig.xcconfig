@@ -1,0 +1,14 @@
+//
+//  BaseConfig.xcconfig
+//  Ride
+//
+//  Created by Mac on 22/08/2022.
+//  Copyright © 2022 Xint Solutions. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+URL_EXTENSION = //mps/rest/mpsapi/handlerequest/
+
+BASE_URL = //https:/$()/live.bayanwallet.com/

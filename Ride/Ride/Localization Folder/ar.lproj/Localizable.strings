@@ -1,0 +1,384 @@
+/* 
+  Localizable.strings
+  Ride
+
+  Created by Mac on 07/11/2022.
+  Copyright © 2022 Xint Solutions. All rights reserved.
+*/
+
+//General
+"Internet connection is unstable" = "يرجى التأكد من اتصالك بالانترنت، حاول مرة اخرى";
+"CAPTAIN_" = "كابتن";
+"RIDER_" = "راكب";
+"Something went wrong" = "خطأ";
+
+//Onboarding
+"Skip" = "تخطي";
+
+"Signup as" = "التسجيل كـ";
+"Login as" = "تسجيل الدخول كـ";
+"Rider" = "راكب";
+"Captain" = "كابتن";
+"AlreadyUser" = "هل لديك حساب مسجّل سابقاً؟";
+"Dont have an account" = "هل عندك حساب؟";
+"Login" = "تسجيل الدخول";
+"Sign Up" = "تسجيل جديد";
+
+"Please Enter Your Details" = "يُرجى إدخال معلوماتك";
+"Mobile Number" = "رقم الجوّال";
+"Verify" = "تحقق";
+
+"Enter OTP" = "أدخل رمز التحقق";
+"Code sent to number" = "تم إرسال الرمز إلى الرقم ";
+"Edit" = "(تعديل)";
+"Didnt receive the OTP" = "لم يصلك الرمز؟";
+"Done" = "تم";
+"Resend OTP" = "إعادة إرسال OTP";
+"Exit" = "خروج";
+
+//Driver Onboarding
+"enterDetails" = "الرجاء إدخال التفاصيل الخاصة بك";
+"idNumber" = "رقم الهوية";
+"licenseExpiry" = "تاريخ انتهاء الرخصة";
+"MobileNumber" = "رقم الجوّال";
+"Date of Birth" = "تاريخ الميلاد";
+
+"Selectyouroption" = "حدد الخيار المناسب";
+"I Own a Car" = "أمتلك سيارة";
+"I Own a Pickup" = "أنا أملك بيك أب";
+
+"Subscriptions" = "الاشتراك";
+"Proceed" = "متابعة";
+
+"noCar" = "ليس لديك أي سيارات مسجلة برقم iD الخاص بك";
+"UseRideARide" = "استخدم Ride A Ride";
+
+"Confirm" = "تأكيد";
+"AddCarSequence" = "الرقم التسلسلي للسيارة";
+"SeqNo" = "رقم التسلسل";
+"OwnershipNo" = "هوية المالك";
+"findSequence" = "كيفيه العثور على الرقم التسلسلي";
+"LearnMore" = "اختر";
+"AuthorizeVehicle" = "المركبات المفوضة";
+
+// Driver Own Car Dashboard
+"Your Application Under Process" = "الطلب الذي تقدمت به قيد المعالجة";
+"Login and authorize on Absher portal" = "اكمل الموافقه على التسجيل من خلال موقع أبشر";
+"See Details" = "الاطِّلاع على التفاصيل";
+
+"Your Application is under review" = "الطلب الذي تقدمت به قيد المعالجة";
+"If you have received an SMS from AMN portal" = "إذا استلمت رسالة نصية قصيرة من منصة أمن، فيُرجى اتّباع التعليمات لإكمال طلبك للتسجيل";
+"Call Customer Care" = "الاتصال بخدمة العملاء";
+"Customer Care Live Chat" = "الدردشة المباشرة مع خدمة العملاء";
+"Report a Problem" = "الإبلاغ عن مشكلة";
+
+"Your application is Approved" = "تمت الموافقة على طلبك";
+"Subscribe" = "اشتراك";
+
+"To Complete Your Registration" = "لإكمال تسجيلك";
+"You need to pay the fees for the first month" = "يجب عليك دفع رسوم الشهر الأول";
+"First month Fees" = "رسوم الشهر الأول";
+"Transaction Fees" = "رسوم المعاملة";
+"VAT Amount" = "مبلغ ضريبة القيمة المضافة";
+"Total Amount Payable" = "إجمالي المبلغ المطلوب دفعه";
+"Balance" = "الرصيد";
+"PROMO" = "الرمز الترويجي +";
+"Add Balance" = "إضافة أموال";
+"Pay with Card" = "بطاقة ائتمانية او مدى";
+"Pay" = "Pay";
+
+//Driver RideARide Dashboard
+"Enter IBAN" = "أدخِل رقم الآيبان";
+"please enter your IBAN" = "للقيام برحلتك الأولى، يُرجى إدخال رقم الآيبان الخاص بك";
+
+//Driver to Rider
+"There are no riders around" = "لا يوجد ركاب حول منطقتك";
+"Drive to high-demand zones to find more riders" = "اذهب إلى مناطق فيها طلب عالي للعثور على مزيد من الركاب";
+"Navigate to high demand zone" = "الذهاب إلى منطقة يزداد فيها الطلب";
+
+"Estimate Earning" = "تقدير الأرباح";
+"Decline" = "رفض";
+"Accept" = "قبول";
+
+"Reached" = "تم الوصول";
+"Arrived" = "وصل";
+"Navigate to Rider" = "الانتقال إلى موقع الراكب";
+
+"Enter PIN from rider to start the ride" = "أدخل الرمز من الراكب لبدء الرحلة";
+"Start Ride" = "بدء الرحلة";
+
+"Go straight" = "اذهب مباشرة لمسافة ";
+"Dropping" = "نزول الراكب";
+"End Ride" = "إنهاء الرحلة";
+
+"Rate your Rider" = "قيّم الراكب";
+"Total Earning" = "إجمالي الأرباح";
+"Total Loyalty Points Earned" = "إجمالي نقاط الولاء التي ربحتها";
+"Submit Rating" = "إرسال التقييم";
+
+"Drop-off Address Changed" = "تم تغيير عنوان التسليم!";
+"Rider changed the drop-off " = "قام الراكب بتغيير موقع الإنزال هو موقع الإنزال الجديد الخاص بك";
+"Navigate" = "توجه";
+"Delete my account" = "حذف الحساب";
+"Cancel Ride" = "إلغاء الرحلة";
+
+//Paymnet Methods
+"Add payment method" = "أضف طريقة للدفع";
+"Card Number" = "رقم البطاقة";
+"Name on Card" = "اسم حامل البطاقة";
+"Exp Date" = "تاريخ الانتهاء";
+"CVV" = "رقم CVV";
+"Save Card" = "حفظ البطاقة";
+"Card Already exists" = "البطاقة مضافة مسبقاً";
+"Please Enter valid CVV" = "ادخل رقم CVV الصحيح";
+"Please Enter valid card number" = "ادخل رقم البطاقة الصحيحة";
+
+"Enter Amount" = "أدخِل المبلغ";
+"Saved Cards" = "البطاقات المحفوظة";
+"Add new" = "أضف بطاقة جديدة";
+"Top Up with Apple Pay" = "أشحن الرصيد باستخدام Apple Pay";
+"No saved cards available" = "لا تتوفّر بطاقات محفوظة";
+"Please add amount for top up" = "يرجى ادخال المبلغ المراد اضافته";
+"Topup" = "شحن رصيد";
+"Ride Topup" = "شحن رصيد رايد";
+"Unable to present Apple Pay authorization" = "تعذر تقديم Apple Pay";
+"Unable to make Apple Pay transaction" = "تعذر اتمام عملية Apple Pay";
+"OK" = "OK";
+
+"Pending" = "معلق";
+"Successfull" = "تم شحن الرصيد بنجاح";
+"Failed" = "فشل شحن الرصيد!";
+"Topup Amount" = "المبلغ";
+"Time" = "الوقت";
+"Date" = "التاريخ";
+"PM" = "مساءً";
+"AM" = "صباحًا";
+
+"Choose Payment Method" = "اختر طريقة الدفع";
+"Amount" = "المبلغ";
+"Pay with Apple Pay" = "أدفع عبر Apple Pay";
+
+
+//Rider Pickup
+"Pickup Location" = "موقع عملية التوصيل";
+"Edit_" = "تعديل";
+"Enter Here" = "ادخل العنوان";
+"Use Current Location" = "استخدم موقعي الحالي";
+"Confirm Pickup" = "تأكيد موقعك الحالي";
+
+"Current Location" = "الموقع الحالي";
+"More available rides" = "المزيد من الرحلات المتوفّرة";
+"Confirm Ride" = "تأكيد الرحلة";
+"Insufficient balance" = "الرصيد غير كافٍ";
+
+"Set Location" = "تحديد الموقع";
+"Confirm Location" = "تأكيد الموقع";
+"Search" = "بحث";
+"Unnamed Location" = "موقع غير مسمى";
+
+"Set Location from Map" = "تحديد الموقع من الخريطة";
+"Where to" = "ادخل عنوان الوجهة";
+"Change drop-off" = "تغيير مكان الوصول";
+
+"Pickup Location" = "موقعك الحالي";
+
+"min away" = "يبعد دقيقه";
+
+"Recommended for you" = "الموصى بها لك";
+
+//Rider To Driver
+"Enter Details" = "أدخِل التفاصيل";
+"Rider KYC Desc" = "لإكمال رحلتك القادمة، يُرجى تعبئة التفاصيل الموجودة";
+"Enter ID" = "أدخِل رقم الهوية";
+"Date of Birth" = "تاريخ الميلاد";
+
+"Waiting for the confirmation" = "يرجى الانتظار لتأكيد الرحلة من قِبل الكابتن";
+"Please try again" = "عذراً! لايوجد كابتن متاح,  يُرجى المحاولة مرة أخرى";
+"Try Again" = "حاول مرة أخرى";
+
+//"Share this PIN" = "أدخل الرمز من الراكب لبدء الرحلة";
+"Share this PIN" = "شارك الرمز مع الكابتن لبدء الرحله";
+"You are riding with" = "الرحلة قائمة مع الكابتن";
+"Change" = "تغيير";
+"Help" = "مساعدة";
+
+"Rate Your Captain" = "قيّم الكابتن";
+"Total Payment" = "المبلغ الإجمالي";
+"Download VAT Invoice" = "تحميل فاتورة ضريبة القيمة المضافة";
+
+"We are cancelling your ride" = "جاري إلغاء رحلتك";
+
+"Your new fare is" = "أجرك الجديد";
+"New fare" = "الأجر الجديد";
+
+"Less than 1 min away" = "Less than 1 min away";
+"Take The Next Ride" = "خذ الرحلة التالية";
+
+//User Profile
+"My Rides" = "رحلاتي بـRiDE";
+"My Reports" = "تقاريري";
+"App Setting" = "إعداد التطبيق";
+"Customer Care" = "خدمة العملاء";
+"Terms & Condition" = "الشروط والأحكام";
+"Privacy Policy" = "سياسة الخصوصية";
+"Share With Friends" = "مشاركة مع الأصدقاء";
+"Log Out" = "تسجيل الخروج";
+"Back" = "الرجوع";
+"Version" = "الإصدار %@";
+"View Details" = "مشاهدة التفاصيل";
+
+"Update Profile" = "تحديث";
+"Email Address" = "عنوان البريد الإلكتروني";
+"Update" = "تحديث";
+
+"Notifications" = "الإشعار";
+
+"Delete" = "حذف";
+
+"Rides Taken" = "الرحلات التي طلبتها";
+"Rides Given" = "الرحلات التي اوصلتها";
+"Trip Accepted" = "تم قبول الرحلة";
+"Trip Rejected" = "الرحلة مرفوضة";
+"Trip Cancelled" = "الرحلة ملغية";
+"Driver Arrived" = "وصل السائق";
+"Trip Started" = "Trip Started";
+"Trip Completed" = "اكتملت الرحلة";
+"Trip Expired" = "الرحلة منتهية";
+
+"Ride Details" = "تفاصيل الرحلة";
+"Your Captain" = "الكابتن الخاص بك";
+"Car Type" = "نوع السيارة";
+"Car Number Plate" = "رقم لوحة السيارة";
+"Sub Total" = "اجمالي المبلغ";
+"Tax Amount" = "القيمة المضافة";
+"Total Payment" = "المبلغ الإجمالي";
+"Total Loyalty Points Earned" = "إجمالي نقاط الولاء المكتسبة";
+"Your Rider" = "الراكب الخاص بك";
+"Share" = "مشاركة";
+"Download" = "تحميل";
+"Image saved to gallery" = "تم حفظ الصورة";
+
+"We will help you" = "سنساعدك بمجرد وصف المشكلة في الفقرة أدناه";
+"Report" = "الإبلاغ";
+"Please enter description" = "يرجى ادخال التفاصيل";
+"Select Report type" = "اختر نوع التقرير";
+"Report Saved" = "تم تقديم التقرير";
+
+"Change Language" = "تغيير اللغة";
+
+"Whatsapp Care" = "خدمة العملاء عبرWhatsapp";
+
+"Want to log out from Ride" = "هل تريد تسجيل الخروج؟";
+
+"Dismiss" = "رفض";
+"Yes Log Out" = "نعم! سجل خروجي";
+
+"Subscription" = "الاشتراك";
+"Remaining Days" = "عدد الأيام المتبقية";
+"Subscription Fee" = "رسوم الاشتراك";
+"Auto Renew Subscription" = "التجديد التلقائي للاشتراك";
+"Upcoming Renewal" = "موعد التجديد القادم";
+"Renewal History" = "سجل التجديد";
+"Renew Subscription Now" = "تجديد الاشتراك الآن";
+"Scheduled On" = "محدد موعده في";
+"Subscription Fee" = "رسوم الاشتراك";
+"Cancel Subscription" = "إلغاء الاشتراك";
+"Renewal Successful" = "تم التجديد";
+
+"Report Detail" = "تفاصيل التقرير";
+
+
+//Promocode
+"Add Promo Code" = "أضف رمز ترويجي";
+"Promo Code" = "الرمز الترويجي";
+"Apply" = "إضافة";
+"Entered promo code is invalid" = "الرمز الترويجي الذي أدخلته غير صالح";
+"Please Enter Promo Code" = "الرجاء ادخال الرمز التويجي";
+
+
+//Switch User
+"You are not a Captain" = "لست كابتن!";
+"Please register as to use Captain mode" = "يرجى التسجيل كسائق";
+"Register As Driver" = "سجل كسائق";
+
+"Captain Mode Enabled" = "تم تفعيل وضع الكابتن";
+"You can now earn money" = "تهانينا! يمكنك الآن اكتساب المال عبر تقديم خدمات القيام بالرحلات والتسليم";
+
+//Chat
+"Open Camera" = "الكاميرا";
+"Open Gallery" = "مكتبة الصور والفيديوهات";
+"Warning" = "Warning";
+"You dont have camera" = "You don't have camera";
+"Message is empty" = "Message is empty";
+"Write a message" = "كتابة رسالة...";
+
+//Commmon Alert VCs
+"Topup Successful" = "تم شحن الرصيد بنجاح";
+//"SAR will be credited to your wallet shorlty" = "سيتم إيداعه في محفظتك بعد قليل SAR %@ . ";
+"SAR will be credited to your wallet shorlty" = "SAR %@ سيتم إيداعه في محفظتك بعد قليل";
+"Please try again after some time we are facing some server issues" = "يُرجى المحاولة مرة أخرى بعد فترة من الوقت؛ يوجد  بعض المشكلات على الخادم حاليا";
+"Topup Failed" = "فشل شحن الرصيد!";
+"Payment of first month fees has been paid successfully" = "Payment of first month fees has been paid successfully.";
+
+"Please select reason of cancelling" = "اختر سبب الإلغاء";
+"Payment Details" = "تفاصيل الدفع";
+"Net Earning" = "صافي الربح";
+"Update IBAN" = "تحديث الآيبان";
+"Your Problem" = "المشاكل";
+"Your ride is cancelled" = "تم إلغاء رحلتك";
+"Go back to Rider" = "الرجوع الى الراكب";
+"IBAN" = " آيبان  :";
+"Bank" = " البنك  : ";
+"Topup Details" = "تفاصيل إضافة الأموال";
+"Transfer Fee" = "رسوم التحويل";
+"Continue" = "يكمل";
+
+//invoice
+"The fare for the ride" = "أجرة الرحلة";
+"Invoice" = "الفاتورة";
+"Supplier name" = "اسم المورّد";
+"Address" = "العنوان";
+"VAT Number" = "رقم ضريبة القيمة المضافة";
+"Invoice Number" = "رقم الفاتورة";
+"Invoice Issuance date" = "تاريخ إصدار الفاتورة";
+"Customer name" = "اسم العميل";
+"Service Offered" = "الخدمة المُقدّمة";
+"Nature of Service" = "نوع الخدمة";
+"Unit Price" = "سعر الوحدة";
+"Quantity" = "الكمية";
+"Item SubtotalEV" = "المجموع الفرعي (بدون ضريبة القيمة المضافة)";
+"Item SubtotalIV" = "المجموع الفرعي (مع ضريبة القيمة المضافة)";
+"Total Amount" = "إجمالي المبلغ";
+"Total (Excluding VAT)" = "الإجمالي (بدون ضريبة القيمة المضافة)";
+"Discount" = "الخصم";
+"Total VAT Amount
+(Excluding VAT)" = "إجمالي المبلغ الخاضع للضريبة (بدون ضريبة القيمة المضافة)";
+"Total VAT" = "إجمالي ضريبة القيمة المضافة";
+"Total Amount Due" = "إجمالي المبلغ المستحق";
+"systemGenerated" = "هذا المستند تم إنشاؤه بواسطة النظام، وبالتالي ليست هناك حاجة إلى إدراج ختم أو توقيع";
+"Clear" = "حذف";
+"Cancel" = "الغاء";
+"Click Pay" = "Click Pay";
+"Your Application Is Rejected" = "Your Application Is Rejected";
+"Please register as captian to use pickup mode" = "Please register as captian to use";
+// Alerts
+"Delete Accounnt" = "حذف الحساب";
+"DeleteAccountDesc" = "هل تريد طلب حذف الحساب؟ سيتم حذف حسابك خلال ٢٤ ساعه";
+"Poor" = "ضعیف";
+"Bad" = "سيء";
+"Average" = "متوسط";
+"Good" = "جيد";
+"Excellent" = "ممتاز";
+"Apple Pay" = "أدفع عبر";
+"mins" = " دقيقه ";
+"Estimated Time" = "Estimated Time";
+"call center" = "خدمة العملاء";
+"share ride details" = "مشاركة تفاصيل الرحلة";
+"call the police" = "اتصل بالطوارئ - ٩١١";
+
+//Location permission
+"location Permission title" = "يجب تفعيل الموقع";
+"location permission desc" = "يرجى السماح دائما بتفعيل الموقع لمعرفة مسار الرحلة";
+"location permission desc rider" = "يرجى السماح دائما بتفعيل الموقع لمعرفة مسار الرحلة";
+
+"Settings" = "الاعدادات";

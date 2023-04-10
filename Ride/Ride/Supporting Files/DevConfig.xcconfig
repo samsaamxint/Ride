@@ -1,0 +1,14 @@
+//
+//  DevConfig.xcconfig
+//  Ride
+//
+//  Created by Mac on 22/08/2022.
+//  Copyright © 2022 Xint Solutions. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = https:/$()/ride.trytechyo.com/
+//BASE_URL = http:/$()/150.230.54.239:3000/
+

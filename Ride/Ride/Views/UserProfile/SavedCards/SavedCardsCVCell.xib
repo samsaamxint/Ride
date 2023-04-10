@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SavedCardsCVCell" reuseIdentifier="SavedCardsCVCell" id="aa9-wL-bep" customClass="SavedCardsCVCell" customModule="Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="574" height="271"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Ki-Oc-x26">
+                <rect key="frame" x="0.0" y="0.0" width="574" height="271"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRn-3l-1d2">
+                        <rect key="frame" x="0.0" y="0.0" width="558" height="271"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KOTAK AQUA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMx-sX-z3V">
+                                <rect key="frame" x="16" y="16" width="87" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-pk-RPh">
+                                <rect key="frame" x="16" y="39" width="50" height="12"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Visa" translatesAutoresizingMaskIntoConstraints="NO" id="OuJ-d9-GM0">
+                                        <rect key="frame" x="0.0" y="-8" width="0.0" height="28"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="••••" lineBreakMode="clip" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nll-cZ-cgE">
+                                        <rect key="frame" x="0.0" y="0.0" width="23.5" height="12"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik8-AW-N3e">
+                                        <rect key="frame" x="27.5" y="0.0" width="22.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="33T-ob-div"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jim Brown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOI-GN-orM">
+                                <rect key="frame" x="16" y="241" width="44" height="12"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChipImage" translatesAutoresizingMaskIntoConstraints="NO" id="Zc0-Kh-qCD">
+                                <rect key="frame" x="16" y="208" width="32" height="24"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1137254902" green="0.20784313730000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kMx-sX-z3V" firstAttribute="top" secondItem="oRn-3l-1d2" secondAttribute="top" constant="16" id="79K-Cp-8nQ"/>
+                            <constraint firstAttribute="bottom" secondItem="jOI-GN-orM" secondAttribute="bottom" constant="18" id="IYz-wj-9AN"/>
+                            <constraint firstItem="kMx-sX-z3V" firstAttribute="leading" secondItem="oRn-3l-1d2" secondAttribute="leading" constant="16" id="OCv-fh-xYd"/>
+                            <constraint firstItem="jOI-GN-orM" firstAttribute="top" secondItem="Zc0-Kh-qCD" secondAttribute="bottom" constant="9" id="Rpm-ZW-F8w"/>
+                            <constraint firstItem="hr7-pk-RPh" firstAttribute="top" secondItem="kMx-sX-z3V" secondAttribute="bottom" constant="6" id="W2Q-IW-kc9"/>
+                            <constraint firstItem="Zc0-Kh-qCD" firstAttribute="leading" secondItem="oRn-3l-1d2" secondAttribute="leading" constant="16" id="XYD-Gi-fpI"/>
+                            <constraint firstItem="hr7-pk-RPh" firstAttribute="leading" secondItem="oRn-3l-1d2" secondAttribute="leading" constant="16" id="udE-Ow-ebR"/>
+                            <constraint firstItem="jOI-GN-orM" firstAttribute="leading" secondItem="oRn-3l-1d2" secondAttribute="leading" constant="16" id="wJj-Ju-TjK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oRn-3l-1d2" firstAttribute="top" secondItem="8Ki-Oc-x26" secondAttribute="top" id="ERf-kh-WGp"/>
+                    <constraint firstAttribute="bottom" secondItem="oRn-3l-1d2" secondAttribute="bottom" id="F5p-Pe-npR"/>
+                    <constraint firstItem="oRn-3l-1d2" firstAttribute="leading" secondItem="8Ki-Oc-x26" secondAttribute="leading" id="VCj-QN-LCu"/>
+                    <constraint firstAttribute="trailing" secondItem="oRn-3l-1d2" secondAttribute="trailing" constant="16" id="bWB-lY-R6N"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="574" height="271"/>
+            <connections>
+                <outlet property="cardHolderNameLbl" destination="jOI-GN-orM" id="sqs-rZ-ncF"/>
+                <outlet property="cardNameLbl" destination="kMx-sX-z3V" id="UKJ-EQ-t1y"/>
+                <outlet property="cardNumberLbl" destination="ik8-AW-N3e" id="zuu-fc-Mxn"/>
+            </connections>
+            <point key="canvasLocation" x="318.84057971014494" y="154.35267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ChipImage" width="32" height="24"/>
+        <image name="Visa" width="89" height="28"/>
+    </resources>
+</document>

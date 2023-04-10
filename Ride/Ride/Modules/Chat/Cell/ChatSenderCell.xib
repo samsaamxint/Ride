@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="bde-3Q-bdM" customClass="ChatSenderCell" customModule="Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bde-3Q-bdM" id="o7L-ug-GfO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j59-L9-SSW">
+                        <rect key="frame" x="10" y="10" width="394" height="99"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VMU-aF-xsG">
+                                <rect key="frame" x="98.5" y="0.0" width="295.5" height="76.5"/>
+                                <color key="backgroundColor" name="PrimarySenderCell"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="OEG-Fg-WLU">
+                                <rect key="frame" x="323.5" y="84.5" width="70.5" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="03:34 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfz-D1-Jyd">
+                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="12"/>
+                                        <color key="textColor" name="PlaceholderTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ticks" translatesAutoresizingMaskIntoConstraints="NO" id="pYB-7w-ZuY">
+                                        <rect key="frame" x="56.5" y="0.0" width="14" height="14.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OEG-Fg-WLU" secondAttribute="trailing" constant="10" id="Pia-Xa-lsU"/>
+                            <constraint firstItem="VMU-aF-xsG" firstAttribute="width" relation="lessThanOrEqual" secondItem="j59-L9-SSW" secondAttribute="width" multiplier="0.75" id="qSa-5m-M1L"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="j59-L9-SSW" secondAttribute="bottom" id="ILy-Ct-Vv2"/>
+                    <constraint firstItem="j59-L9-SSW" firstAttribute="leading" secondItem="o7L-ug-GfO" secondAttribute="leading" constant="10" id="YBo-X6-x3j"/>
+                    <constraint firstItem="j59-L9-SSW" firstAttribute="top" secondItem="o7L-ug-GfO" secondAttribute="top" constant="10" id="ghW-uH-Dk7"/>
+                    <constraint firstAttribute="trailing" secondItem="j59-L9-SSW" secondAttribute="trailing" constant="10" id="xeK-GX-xMi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainStackView" destination="j59-L9-SSW" id="Yr9-nH-iJK"/>
+                <outlet property="msgContendView" destination="VMU-aF-xsG" id="x8p-DZ-GmB"/>
+                <outlet property="msgStatusView" destination="pYB-7w-ZuY" id="dYi-7u-sLo"/>
+                <outlet property="msgTimeLbl" destination="Bfz-D1-Jyd" id="L5t-3E-dV5"/>
+            </connections>
+            <point key="canvasLocation" x="244.92753623188409" y="99.441964285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ticks" width="14" height="8.5"/>
+        <namedColor name="PlaceholderTextColor">
+            <color red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimarySenderCell">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

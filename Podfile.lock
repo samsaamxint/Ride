@@ -1,0 +1,126 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - CommonDataModelsKit-iOS (1.0.107):
+    - SwiftyRSA
+    - TapAdditionsKitV2
+    - TapCardVlidatorKit-iOS
+    - TapKeychain
+  - DropDown (2.3.13)
+  - Google-Maps-iOS-Utils (4.1.0):
+    - Google-Maps-iOS-Utils/Clustering (= 4.1.0)
+    - Google-Maps-iOS-Utils/Geometry (= 4.1.0)
+    - Google-Maps-iOS-Utils/GeometryUtils (= 4.1.0)
+    - Google-Maps-iOS-Utils/Heatmap (= 4.1.0)
+    - Google-Maps-iOS-Utils/QuadTree (= 4.1.0)
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Clustering (4.1.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Geometry (4.1.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/GeometryUtils (4.1.0):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Heatmap (4.1.0):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/QuadTree (4.1.0):
+    - GoogleMaps
+  - GoogleMaps (7.4.0):
+    - GoogleMaps/Maps (= 7.4.0)
+  - GoogleMaps/Base (7.4.0)
+  - GoogleMaps/Maps (7.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.4.0)
+  - IQKeyboardManagerSwift (6.5.11)
+  - Kingfisher (7.6.2)
+  - OTPFieldView (1.0.1)
+  - SDWebImage (5.15.4):
+    - SDWebImage/Core (= 5.15.4)
+  - SDWebImage/Core (5.15.4)
+  - Socket.IO-Client-Swift (16.0.1):
+    - Starscream (~> 4.0)
+  - Starscream (4.0.4)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
+  - TapAdditionsKitV2 (0.0.9):
+    - TapSwiftFixesV2
+  - TapCardScanner-iOS (1.0.25):
+    - CommonDataModelsKit-iOS
+    - TapCardVlidatorKit-iOS
+  - TapCardVlidatorKit-iOS (1.0.20)
+  - TapKeychain (1.0.5)
+  - TapSwiftFixesV2 (1.0.0):
+    - TapSwiftFixesV2/CoreGraphics (= 1.0.0)
+    - TapSwiftFixesV2/Exceptions (= 1.0.0)
+    - TapSwiftFixesV2/Threading (= 1.0.0)
+  - TapSwiftFixesV2/CoreGraphics (1.0.0)
+  - TapSwiftFixesV2/Exceptions (1.0.0)
+  - TapSwiftFixesV2/Threading (1.0.0)
+  - TextFieldFormatter (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - AlamofireImage (~> 3.5.2)
+  - DropDown
+  - Google-Maps-iOS-Utils (~> 4.1.0)
+  - GoogleMaps (~> 7.0)
+  - GooglePlaces (~> 7.0)
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 7.0)
+  - OTPFieldView
+  - SDWebImage
+  - Socket.IO-Client-Swift (~> 16.0.1)
+  - TapCardScanner-iOS
+  - TextFieldFormatter
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - CommonDataModelsKit-iOS
+    - DropDown
+    - Google-Maps-iOS-Utils
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - OTPFieldView
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyRSA
+    - TapAdditionsKitV2
+    - TapCardScanner-iOS
+    - TapCardVlidatorKit-iOS
+    - TapKeychain
+    - TapSwiftFixesV2
+    - TextFieldFormatter
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  CommonDataModelsKit-iOS: 6559f0a75e5dd2b1e8493511188278ef2eb54694
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Google-Maps-iOS-Utils: 3343332b18dfd5be8f1f44edd7d481ace3da4d9a
+  GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GooglePlaces: 544e908d94860bf6f8fc1865b80d2c7eb6b5f937
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
+  SDWebImage: 1c39de67663e5eebb2f41324d5d580eeea12dd4c
+  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
+  TapAdditionsKitV2: 9846381c32b150303cbeff355550d3500a98f77d
+  TapCardScanner-iOS: 9db044847348ddb7a3b4ca262b33842e83d71a6e
+  TapCardVlidatorKit-iOS: 00ac65c44019f955234640e5d4ca583f639edca2
+  TapKeychain: 143aa70bb2d1b094e0298e944660264034c79849
+  TapSwiftFixesV2: a8623a7273c6790b9754ec7e272e96fce7d3a800
+  TextFieldFormatter: 86dfe06160a885f6eb985e1266bb24a874debb9a
+
+PODFILE CHECKSUM: 873d4ba4ea1b6881264792d7a29d48a28e564689
+
+COCOAPODS: 1.12.0

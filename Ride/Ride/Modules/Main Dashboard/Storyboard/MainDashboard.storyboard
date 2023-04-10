@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CYp-9t-Ai8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Dashboard View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MainDashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MainDashboardViewController" customModule="Ride" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crm-A3-4Ur">
+                                <rect key="frame" x="12" y="562" width="390" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="yC8-Hw-BGN"/>
+                                </constraints>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-Yv-g8m">
+                                <rect key="frame" x="344" y="486" width="60" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-lj-eEJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="RNK-mO-5CU"/>
+                                            <constraint firstAttribute="height" constant="60" id="q7H-WD-Flc"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="currentLoc">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToMyLoc:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="98i-xk-TIJ"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-wh-r1I">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Gik-G8-dhJ"/>
+                                            <constraint firstAttribute="width" constant="60" id="U6c-dh-srb"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="DirectionsIcon"/>
+                                        <connections>
+                                            <action selector="openGoogleMaps:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xdn-6S-BFp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ctq-Yv-g8m" secondAttribute="trailing" constant="10" id="CZJ-nx-lQG"/>
+                            <constraint firstItem="crm-A3-4Ur" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="L0s-P3-scU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="crm-A3-4Ur" secondAttribute="bottom" id="syz-bE-7wZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="crm-A3-4Ur" secondAttribute="trailing" constant="12" id="v65-SK-Htv"/>
+                            <constraint firstItem="crm-A3-4Ur" firstAttribute="top" secondItem="ctq-Yv-g8m" secondAttribute="bottom" constant="16" id="xoe-e3-T7T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N6m-lO-4G2"/>
+                    <connections>
+                        <outlet property="containerView" destination="crm-A3-4Ur" id="ShQ-sr-d1p"/>
+                        <outlet property="containerViewBottomCons" destination="syz-bE-7wZ" id="1kj-XU-6mX"/>
+                        <outlet property="containerViewHeight" destination="yC8-Hw-BGN" id="KAc-dB-9Oe"/>
+                        <outlet property="goToGM" destination="zhu-wh-r1I" id="9lr-Iq-hzK"/>
+                        <outlet property="myLoctionBtn" destination="gaV-lj-eEJ" id="e4o-uR-Zj3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710.14492753623199" y="128.57142857142856"/>
+        </scene>
+        <!--Main Dashboard Nav View Controller-->
+        <scene sceneID="YBw-Mc-z8Z">
+            <objects>
+                <navigationController storyboardIdentifier="MainDashboardNavViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CYp-9t-Ai8" customClass="MainDashboardNavViewController" customModule="Ride" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4SM-nS-iSY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="6VQ-op-JeE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MB8-vi-ixj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200.00000000000003" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DirectionsIcon" width="66" height="66"/>
+        <image name="currentLoc" width="63" height="66"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

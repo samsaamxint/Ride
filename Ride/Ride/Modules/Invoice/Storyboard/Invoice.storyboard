@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Invoice View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="InvoiceViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="InvoiceViewController" customModule="Ride" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invoice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67r-LZ-AZX">
+                                <rect key="frame" x="16" y="78" width="382" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Invoice"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCG-VS-6pv">
+                                <rect key="frame" x="16" y="131" width="382" height="731"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-sb-cK4">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="1499.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EaF-bc-63i">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="430"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="e3q-fw-M2V">
+                                                        <rect key="frame" x="12" y="16" width="358" height="398"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nk8-5N-QE0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="53"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-rz-NR6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="44"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InvoiceImage" translatesAutoresizingMaskIntoConstraints="NO" id="lhN-ot-9e4">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="44" id="JAO-sP-oQe"/>
+                                                                                    <constraint firstAttribute="width" constant="44" id="j1s-FC-hzl"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="22"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tgm-UC-Qz5">
+                                                                                <rect key="frame" x="52" y="0.0" width="306" height="44"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Supplier name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeE-PG-ez8">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="306" height="22"/>
+                                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                                        <color key="textColor" name="SecondaryGrayTextColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Supplier name"/>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="RiDE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1e4-Z9-fye">
+                                                                                        <rect key="frame" x="0.0" y="22" width="306" height="22"/>
+                                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkV-sp-GdH">
+                                                                        <rect key="frame" x="0.0" y="52" width="358" height="1"/>
+                                                                        <color key="backgroundColor" name="SepratorColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="iyG-ht-lkv"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-AY-VNH">
+                                                                <rect key="frame" x="0.0" y="69" width="358" height="53"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-C4-qU0">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="47"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-GF-EWN">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="23.5"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="Address /">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="العنوان">
+                                                                                        <attributes>
+                                                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Ar Rabie Dist. 13326, Riyadh, Saudi Arabia" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbg-ms-IdU">
+                                                                                <rect key="frame" x="0.0" y="23.5" width="358" height="23.5"/>
+                                                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                                <color key="textColor" name="PrimaryDarkBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8z-5g-U5T">
+                                                                        <rect key="frame" x="0.0" y="52" width="358" height="1"/>
+                                                                        <color key="backgroundColor" name="SepratorColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="rFS-We-HBR"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ik3-BJ-JVM">
+                                                                <rect key="frame" x="0.0" y="138" width="358" height="53"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MIL-2j-sjm">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="47"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttl-HG-z19">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="23.5"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="VAT Number /">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="رقم ضريبة القيمة المضافة">
+                                                                                        <attributes>
+                                                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="310945353400003" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeF-Gz-9fT">
+                                                                                <rect key="frame" x="0.0" y="23.5" width="358" height="23.5"/>
+                                                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                                <color key="textColor" name="PrimaryDarkBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63J-BZ-fTx">
+                                                                        <rect key="frame" x="0.0" y="52" width="358" height="1"/>
+                                                                        <color key="backgroundColor" name="SepratorColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="lNw-Ux-Xd1"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nUN-ly-Lnz">
+                                                                <rect key="frame" x="0.0" y="207" width="358" height="53"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eHX-E6-akL">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="47"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idu-LC-Qo0">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="23.5"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="Invoice Number / ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="رقم الفاتورة">
+                                                                                        <attributes>
+                                                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="YWH-AAAHSH-9927928" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxL-Vl-3C9">
+                                                                                <rect key="frame" x="0.0" y="23.5" width="358" height="23.5"/>
+                                                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                                <color key="textColor" name="PrimaryDarkBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBI-Aw-Zc5">
+                                                                        <rect key="frame" x="0.0" y="52" width="358" height="1"/>
+                                                                        <color key="backgroundColor" name="SepratorColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="Vru-Wg-ysN"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BZj-IX-8lV">
+                                                                <rect key="frame" x="0.0" y="276" width="358" height="53"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-21-QTj">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="47"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auY-kB-8zv">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="23.5"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="Invoice Issuance date /">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="تاريخ إصدار الفاتورة">
+                                                                                        <attributes>
+                                                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                            <font key="NSOriginalFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                            <font key="NSOriginalFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="2022-07-23" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXu-V2-VZy">
+                                                                                <rect key="frame" x="0.0" y="23.5" width="358" height="23.5"/>
+                                                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                                <color key="textColor" name="PrimaryDarkBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RE5-TW-WFV">
+                                                                        <rect key="frame" x="0.0" y="52" width="358" height="1"/>
+                                                                        <color key="backgroundColor" name="SepratorColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="soL-sj-096"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1tR-s3-fzt">
+                                                                <rect key="frame" x="0.0" y="345" width="358" height="53"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dpP-lS-ndS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="47"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-Ba-P5e">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="23.5"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="Customer name /">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="اسم العميل">
+                                                                                        <attributes>
+                                                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                            <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                            <font key="NSFont" metaFont="system"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Jim Brown" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZv-1c-QEh">
+                                                                                <rect key="frame" x="0.0" y="23.5" width="358" height="23.5"/>
+                                                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                                <color key="textColor" name="PrimaryDarkBG"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdI-gh-Pzq">
+                                                                        <rect key="frame" x="0.0" y="52" width="358" height="1"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="n5H-oA-kya"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="e3q-fw-M2V" secondAttribute="trailing" constant="12" id="P6k-7G-VYX"/>
+                                                    <constraint firstItem="e3q-fw-M2V" firstAttribute="top" secondItem="EaF-bc-63i" secondAttribute="top" constant="16" id="aFj-kF-5Ov"/>
+                                                    <constraint firstAttribute="bottom" secondItem="e3q-fw-M2V" secondAttribute="bottom" constant="16" id="phm-5F-nlS"/>
+                                                    <constraint firstItem="e3q-fw-M2V" firstAttribute="leading" secondItem="EaF-bc-63i" secondAttribute="leading" constant="12" id="wOg-7D-rt4"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="PrimaryGreen"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zW8-sH-IyD">
+                                                <rect key="frame" x="0.0" y="446" width="382" height="19.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Service Offered / ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="16"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="الخدمة المُقدّمة">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-9d-rfc">
+                                                <rect key="frame" x="0.0" y="481.5" width="382" height="318"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-vD-eWm">
+                                                        <rect key="frame" x="12" y="16" width="358" height="286"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="k7x-MX-XYD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="39.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0Z-kj-gKk">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="129" height="39.5"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Nature of Service / ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="نوع الخدمة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="The fare for the ride" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="328-bM-jul">
+                                                                        <rect key="frame" x="229" y="0.0" width="129" height="39.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="The fare for the ride"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Y3c-hU-qHO">
+                                                                <rect key="frame" x="0.0" y="57.5" width="358" height="17"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOt-Fq-3lg">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="17"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Unit Price /">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="  ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="سعر الوحدة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text=" 20.84 SAR" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-MR-Coy">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="17"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Y0a-id-7Zs">
+                                                                <rect key="frame" x="0.0" y="92.5" width="358" height="17"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUx-MN-u4b">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="17"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Quantity /  ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="الكمية">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ1-td-GZJ">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="17"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="tGO-Mm-cWP">
+                                                                <rect key="frame" x="0.0" y="127.5" width="358" height="78"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIc-1s-ZWn">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="78"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment>
+                                                                                <string key="content">Item Subtotal /المجموع الفرعي
+(Excluding VAT) /   (بدون ضريبة القيمة المضافة)</string>
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNi-qc-o35">
+                                                                        <rect key="frame" x="219" y="0.0" width="139" height="78"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="xh7-z4-XnQ">
+                                                                <rect key="frame" x="0.0" y="223.5" width="358" height="62.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-Cx-gbp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="62.5"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Item Subtotal /">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="ا">
+                                                                                <attributes>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="لمجموع">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment>
+                                                                                <string key="content"> الفرعي 
+</string>
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="(Including VAT) /  (مع ضريبة القيمة المضافة)">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgx-qz-5ke">
+                                                                        <rect key="frame" x="219" y="0.0" width="139" height="62.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Jth-vD-eWm" firstAttribute="leading" secondItem="1pJ-9d-rfc" secondAttribute="leading" constant="12" id="7vl-ix-5Bd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Jth-vD-eWm" secondAttribute="bottom" constant="16" id="85A-6O-XcI"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Jth-vD-eWm" secondAttribute="trailing" constant="12" id="tbk-Hz-1zU"/>
+                                                    <constraint firstItem="Jth-vD-eWm" firstAttribute="top" secondItem="1pJ-9d-rfc" secondAttribute="top" constant="16" id="yQz-J5-8mG"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="PrimaryGreen"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0w-Ar-OvJ">
+                                                <rect key="frame" x="0.0" y="807.5" width="382" height="96"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="znT-sP-8XG">
+                                                        <rect key="frame" x="12" y="16" width="358" height="64"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="u2O-dD-53T">
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="0.0"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nature of Service" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHe-V2-mIx">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                        <color key="textColor" name="SecondaryGrayTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Ride hailing surcharge" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gT-2s-8uO">
+                                                                        <rect key="frame" x="179" y="0.0" width="179" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="z75-Oc-t1y">
+                                                                <rect key="frame" x="0.0" y="16" width="358" height="0.0"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit Price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-hU-3QW">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                        <color key="textColor" name="SecondaryGrayTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMF-OB-bNX">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="dbg-5j-2Qq">
+                                                                <rect key="frame" x="0.0" y="32" width="358" height="0.0"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzf-hS-F38">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                        <color key="textColor" name="SecondaryGrayTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0J-Gk-JaT">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="wFP-7c-elf">
+                                                                <rect key="frame" x="0.0" y="48" width="358" height="0.0"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pff-Rf-WBP">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="0.0"/>
+                                                                        <string key="text">Item Subtotal 
+(Excluding VAT)</string>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                        <color key="textColor" name="SecondaryGrayTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh8-cM-Gng">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="c20-Gz-vpl">
+                                                                <rect key="frame" x="0.0" y="64" width="358" height="0.0"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dO-xD-uib">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="0.0"/>
+                                                                        <string key="text">Item Subtotal 
+(Including VAT)</string>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                        <color key="textColor" name="SecondaryGrayTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhC-Tp-pfV">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="znT-sP-8XG" secondAttribute="trailing" constant="12" id="dLc-7w-W0B"/>
+                                                    <constraint firstItem="znT-sP-8XG" firstAttribute="leading" secondItem="O0w-Ar-OvJ" secondAttribute="leading" constant="12" id="iKS-fi-Lj0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="znT-sP-8XG" secondAttribute="bottom" constant="16" id="mKL-ih-k9A"/>
+                                                    <constraint firstItem="znT-sP-8XG" firstAttribute="top" secondItem="O0w-Ar-OvJ" secondAttribute="top" constant="16" id="q7x-cc-Jox"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="PrimaryGreen"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlQ-lm-oOg">
+                                                <rect key="frame" x="0.0" y="815.5" width="382" height="19.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Total Amount /">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="16"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="15"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="إجمالي المبلغ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" metaFont="system" size="15"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fm0-bV-BVJ">
+                                                <rect key="frame" x="0.0" y="851" width="382" height="341"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4tH-la-wlA">
+                                                        <rect key="frame" x="12" y="16" width="358" height="309"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="blP-9s-Qvq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="55"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7e-Ij-Yit">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="55"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="180" id="BEE-9P-mQ8"/>
+                                                                        </constraints>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Total (Excluding VAT) /  ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="الإجمالي">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" (">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="بدون">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="ضريبة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="القيمة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="المضافة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=")&quot;">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-yK-Af1">
+                                                                        <rect key="frame" x="210" y="0.0" width="148" height="55"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="xBq-Qe-EF6">
+                                                                <rect key="frame" x="0.0" y="71" width="358" height="17"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2S-nd-wi1">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="17"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Discount /  ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="الخصم">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRc-ss-LXT">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="17"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="aEU-Tw-Oy6">
+                                                                <rect key="frame" x="0.0" y="104" width="358" height="57.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isy-Bv-QpZ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="149" height="57.5"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Total VAT Amount / ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="إجمالي المبلغ الخاضع للضريبة ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment>
+                                                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                                                <attributes>
+                                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="(Excluding VAT) / ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="(بدون ضريبة القيمة المضافة)">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="smallSystem"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKf-fp-ma4">
+                                                                        <rect key="frame" x="209" y="0.0" width="149" height="57.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="obK-1H-Qt0">
+                                                                <rect key="frame" x="0.0" y="177.5" width="358" height="55"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSc-JX-vxK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="55"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Total VAT / ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="إجمالي">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="ضريبة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="القيمة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="المضافة">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.32940999999999998" green="0.32940999999999998" blue="0.32940999999999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0E-21-edz">
+                                                                        <rect key="frame" x="219" y="0.0" width="139" height="55"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVs-Fw-fGr">
+                                                                <rect key="frame" x="0.0" y="248.5" width="358" height="1"/>
+                                                                <color key="backgroundColor" name="SepratorColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="2ss-a3-1KM"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="slj-hc-8pN">
+                                                                <rect key="frame" x="0.0" y="265.5" width="358" height="43.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJE-XT-a6r">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="43.5"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment content="Total Amount Due /">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                    <font key="NSFont" metaFont="system"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="إجمالي">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="المبلغ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content=" ">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                            <fragment content="المستحق">
+                                                                                <attributes>
+                                                                                    <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                                    <font key="NSFont" size="11" name="NotoNastaliqUrdu"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 SAR " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw2-4J-ndH">
+                                                                        <rect key="frame" x="219" y="0.0" width="139" height="43.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="4tH-la-wlA" firstAttribute="leading" secondItem="fm0-bV-BVJ" secondAttribute="leading" constant="12" id="1Po-sN-bAQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4tH-la-wlA" secondAttribute="trailing" constant="12" id="ILn-7Z-MvL"/>
+                                                    <constraint firstItem="4tH-la-wlA" firstAttribute="top" secondItem="fm0-bV-BVJ" secondAttribute="top" constant="16" id="MUd-s6-mwh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4tH-la-wlA" secondAttribute="bottom" constant="16" id="seD-kp-jhz"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="PrimaryGreen"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNR-gX-s8g">
+                                                <rect key="frame" x="0.0" y="1208" width="382" height="170"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NpR-bU-5hr">
+                                                        <rect key="frame" x="116" y="10" width="150" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="MRv-gj-EOj"/>
+                                                            <constraint firstAttribute="width" constant="150" id="fyg-FV-gRR"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="NpR-bU-5hr" firstAttribute="top" secondItem="rNR-gX-s8g" secondAttribute="top" constant="10" id="XOf-5M-QiT"/>
+                                                    <constraint firstItem="NpR-bU-5hr" firstAttribute="centerX" secondItem="rNR-gX-s8g" secondAttribute="centerX" id="gC2-TE-mzk"/>
+                                                    <constraint firstItem="NpR-bU-5hr" firstAttribute="centerY" secondItem="rNR-gX-s8g" secondAttribute="centerY" id="n7c-vg-MjP"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a system generated document, hence there is no need for stamp or signatures" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-kc-RfW">
+                                                <rect key="frame" x="0.0" y="1394" width="382" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                                <color key="textColor" name="SepratorColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="systemGenerated"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8w7-3a-jZH">
+                                                <rect key="frame" x="0.0" y="1443.5" width="382" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="sFC-WQ-yb6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Download VAT Invoice">
+                                                    <color key="titleColor" name="PrimaryBtnBg"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="PrimaryBtnBg"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Download VAT Invoice"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapDownloadBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="grV-n8-utb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zyD-sb-cK4" firstAttribute="leading" secondItem="RCG-VS-6pv" secondAttribute="leading" id="38O-KU-rr5"/>
+                                    <constraint firstItem="zyD-sb-cK4" firstAttribute="width" secondItem="RCG-VS-6pv" secondAttribute="width" id="8OY-E1-2DG"/>
+                                    <constraint firstItem="zyD-sb-cK4" firstAttribute="top" secondItem="RCG-VS-6pv" secondAttribute="top" id="O74-Wg-ylf"/>
+                                    <constraint firstAttribute="bottom" secondItem="zyD-sb-cK4" secondAttribute="bottom" id="X4S-d7-tfw"/>
+                                    <constraint firstAttribute="trailing" secondItem="zyD-sb-cK4" secondAttribute="trailing" id="shN-FF-wzp"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bE-y9-Xd3">
+                                <rect key="frame" x="368" y="77.5" width="30" height="30"/>
+                                <color key="backgroundColor" name="PrimaryBtnBg"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0bE-y9-Xd3" secondAttribute="height" multiplier="1:1" id="c1S-TD-oqM"/>
+                                    <constraint firstAttribute="width" constant="30" id="ce4-ce-OUK"/>
+                                </constraints>
+                                <color key="tintColor" name="VCBG"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="square.and.arrow.down" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapDownloadBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Xbk-Je-PDL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RCG-VS-6pv" secondAttribute="trailing" constant="16" id="6tB-tO-DWf"/>
+                            <constraint firstItem="RCG-VS-6pv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9wD-O0-72e"/>
+                            <constraint firstItem="67r-LZ-AZX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Qkk-Tn-viv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="RCG-VS-6pv" secondAttribute="bottom" id="Qnk-Sf-Psv"/>
+                            <constraint firstItem="RCG-VS-6pv" firstAttribute="top" secondItem="67r-LZ-AZX" secondAttribute="bottom" constant="24" id="Tbe-qX-HYI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0bE-y9-Xd3" secondAttribute="trailing" constant="16" id="Uhw-Tv-e2J"/>
+                            <constraint firstItem="0bE-y9-Xd3" firstAttribute="centerY" secondItem="67r-LZ-AZX" secondAttribute="centerY" id="c1r-Ok-Pmq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="67r-LZ-AZX" secondAttribute="trailing" constant="16" id="eGn-xi-AOX"/>
+                            <constraint firstItem="67r-LZ-AZX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="qqt-qi-OEn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QRCode" destination="NpR-bU-5hr" id="WOr-H7-Dii"/>
+                        <outlet property="addresLbl" destination="nbg-ms-IdU" id="atk-gh-5yq"/>
+                        <outlet property="address" destination="lMQ-GF-EWN" id="Zbl-uq-U7p"/>
+                        <outlet property="companyTotal" destination="hhC-Tp-pfV" id="4u2-79-czn"/>
+                        <outlet property="companyVAT" destination="Gh8-cM-Gng" id="wZV-3X-vaL"/>
+                        <outlet property="compnayUnitPrice" destination="AMF-OB-bNX" id="kkA-Nd-CFV"/>
+                        <outlet property="customerLbl" destination="Ck0-Ba-P5e" id="Y1G-6q-hot"/>
+                        <outlet property="customerName" destination="kZv-1c-QEh" id="ttY-1o-pB0"/>
+                        <outlet property="discountAmount" destination="fRc-ss-LXT" id="WdL-7T-DRr"/>
+                        <outlet property="discountLbl" destination="O2S-nd-wi1" id="9ww-9C-wP4"/>
+                        <outlet property="downloadBtn" destination="8w7-3a-jZH" id="4Wg-zj-Ghj"/>
+                        <outlet property="iSEV" destination="GIc-1s-ZWn" id="bNK-qZ-M6x"/>
+                        <outlet property="iSIV" destination="rSI-Cx-gbp" id="iaJ-aD-vx5"/>
+                        <outlet property="invoice" destination="idu-LC-Qo0" id="Uje-2e-zX8"/>
+                        <outlet property="invoiceLbl" destination="ZxL-Vl-3C9" id="JgG-ci-AlC"/>
+                        <outlet property="invoiceTitle" destination="67r-LZ-AZX" id="sQk-6k-O6M"/>
+                        <outlet property="invoiceView" destination="RCG-VS-6pv" id="RPY-au-bXI"/>
+                        <outlet property="issuanceDate" destination="AXu-V2-VZy" id="V2Q-e3-2rF"/>
+                        <outlet property="issuanceDateLbl" destination="auY-kB-8zv" id="AmU-sD-0rW"/>
+                        <outlet property="natureOfServce" destination="328-bM-jul" id="PWG-di-k1L"/>
+                        <outlet property="natureOfServiceRide" destination="6gT-2s-8uO" id="wzw-gr-ZEv"/>
+                        <outlet property="nosLbl" destination="l0Z-kj-gKk" id="fKA-cA-ILe"/>
+                        <outlet property="quantityLbl" destination="hUx-MN-u4b" id="ugz-iq-fdz"/>
+                        <outlet property="rideQuality" destination="u0J-Gk-JaT" id="VRn-14-eAZ"/>
+                        <outlet property="rideUnitPrice" destination="u7w-MR-Coy" id="MUh-iE-hkv"/>
+                        <outlet property="rideVAT" destination="sNi-qc-o35" id="jm6-hY-6NH"/>
+                        <outlet property="riderTotal" destination="hgx-qz-5ke" id="RXI-tF-qDW"/>
+                        <outlet property="serviceLbl" destination="zW8-sH-IyD" id="QNB-B8-0m4"/>
+                        <outlet property="serviceQuanlity" destination="lJ1-td-GZJ" id="bNm-NX-YwJ"/>
+                        <outlet property="supplierLbl" destination="TeE-PG-ez8" id="PhG-D7-tvo"/>
+                        <outlet property="systemLbl" destination="oQg-kc-RfW" id="2ae-g1-Zuo"/>
+                        <outlet property="titleLbl" destination="1e4-Z9-fye" id="zK3-dt-S5C"/>
+                        <outlet property="totalAmount" destination="K8O-yK-Af1" id="SoG-U0-X9G"/>
+                        <outlet property="totalAmountDue" destination="Vw2-4J-ndH" id="GwJ-Ag-4Bn"/>
+                        <outlet property="totalAmountDueLbl" destination="WJE-XT-a6r" id="l6W-lK-bwo"/>
+                        <outlet property="totalAmountTitle" destination="vlQ-lm-oOg" id="fYL-q7-jEy"/>
+                        <outlet property="totalEV" destination="l7e-Ij-Yit" id="N1j-YX-bkE"/>
+                        <outlet property="totalPrice" destination="bKf-fp-ma4" id="AKq-tY-L3H"/>
+                        <outlet property="totalVAT" destination="r0E-21-edz" id="zEw-xe-g58"/>
+                        <outlet property="totalVATXV" destination="Isy-Bv-QpZ" id="aM4-9g-jdn"/>
+                        <outlet property="ttoalVatLbl" destination="XSc-JX-vxK" id="yWj-qz-Zj2"/>
+                        <outlet property="unitPriceLbl" destination="vOt-Fq-3lg" id="b7R-zo-Ii7"/>
+                        <outlet property="vat" destination="ttl-HG-z19" id="3zh-Nh-0Ln"/>
+                        <outlet property="vatNumberLbl" destination="QeF-Gz-9fT" id="ct6-Td-ygY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="124"/>
+        </scene>
+        <!--Pdf Web View Controller-->
+        <scene sceneID="1nC-ZU-FHE">
+            <objects>
+                <viewController storyboardIdentifier="PdfWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BEu-87-D9S" customClass="PdfWebViewController" customModule="Ride" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7V-69-HI6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqY-oT-Ee6">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lvs-94-sEM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fqY-oT-Ee6" firstAttribute="leading" secondItem="lvs-94-sEM" secondAttribute="leading" id="3T0-Iq-pPd"/>
+                            <constraint firstItem="lvs-94-sEM" firstAttribute="bottom" secondItem="fqY-oT-Ee6" secondAttribute="bottom" id="nZV-bu-S7w"/>
+                            <constraint firstItem="fqY-oT-Ee6" firstAttribute="top" secondItem="lvs-94-sEM" secondAttribute="top" id="xuQ-8e-MnI"/>
+                            <constraint firstItem="lvs-94-sEM" firstAttribute="trailing" secondItem="fqY-oT-Ee6" secondAttribute="trailing" id="zn7-yM-adZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="fqY-oT-Ee6" id="LWm-kP-5th"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMw-P2-qUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InvoiceImage" width="48" height="48"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <namedColor name="PrimaryBtnBg">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryDarkBG">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryGreen">
+            <color red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryGrayTextColor">
+            <color red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SepratorColor">
+            <color red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VCBG">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

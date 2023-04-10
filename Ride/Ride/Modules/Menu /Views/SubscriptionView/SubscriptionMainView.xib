@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SFProDisplay-Semibold.ttf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SubscriptionMainView" customModule="Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buA-Ra-4fH">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGd-y3-dXL">
+                            <rect key="frame" x="12" y="12" width="126" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.99 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJd-nO-Gmh">
+                                    <rect key="frame" x="6" y="6" width="114" height="20"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="1tK-E3-fl8"/>
+                                <constraint firstAttribute="bottom" secondItem="AJd-nO-Gmh" secondAttribute="bottom" constant="6" id="2UW-7g-s6J"/>
+                                <constraint firstItem="AJd-nO-Gmh" firstAttribute="leading" secondItem="SGd-y3-dXL" secondAttribute="leading" constant="6" id="7B0-3F-v5n"/>
+                                <constraint firstAttribute="trailing" secondItem="AJd-nO-Gmh" secondAttribute="trailing" constant="6" id="LQr-Ut-Cfv"/>
+                                <constraint firstItem="AJd-nO-Gmh" firstAttribute="top" secondItem="SGd-y3-dXL" secondAttribute="top" constant="6" id="YT9-3m-dtz"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU6-u6-9Ip">
+                            <rect key="frame" x="12" y="68" width="126" height="18"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="efm-rK-bOR">
+                            <rect key="frame" x="12" y="68" width="126" height="160"/>
+                            <subviews>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FT9-V3-yf3">
+                                    <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd7-qa-l2C">
+                                            <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykE-QT-ds5">
+                                            <rect key="frame" x="0.0" y="5" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-hZ-fjG">
+                                    <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Kms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ek-Ra-SvW">
+                                            <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="10 Kms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-0C-uCc">
+                                            <rect key="frame" x="0.0" y="5" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VqU-R1-AIe">
+                                    <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5% Extra Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFt-D5-Dnt">
+                                            <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Min. 100 SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOt-Sr-wo4">
+                                            <rect key="frame" x="0.0" y="5" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-qv-3Z8">
+                                    <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSr-kQ-WcO">
+                                            <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Original, Fancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-oB-Qja">
+                                            <rect key="frame" x="0.0" y="5" width="91.333333333333329" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="DarkGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SGd-y3-dXL" secondAttribute="trailing" constant="12" id="3Cz-MV-7vV"/>
+                        <constraint firstItem="SGd-y3-dXL" firstAttribute="top" secondItem="buA-Ra-4fH" secondAttribute="top" constant="12" id="8Cz-bo-3FE"/>
+                        <constraint firstItem="mU6-u6-9Ip" firstAttribute="leading" secondItem="buA-Ra-4fH" secondAttribute="leading" constant="12" id="Iaz-iI-dp0"/>
+                        <constraint firstAttribute="trailing" secondItem="mU6-u6-9Ip" secondAttribute="trailing" constant="12" id="L6n-5d-HuJ"/>
+                        <constraint firstItem="efm-rK-bOR" firstAttribute="leading" secondItem="buA-Ra-4fH" secondAttribute="leading" constant="12" id="LOb-Yp-dPO"/>
+                        <constraint firstAttribute="trailing" secondItem="efm-rK-bOR" secondAttribute="trailing" constant="12" id="NBR-Hz-vLJ"/>
+                        <constraint firstItem="SGd-y3-dXL" firstAttribute="leading" secondItem="buA-Ra-4fH" secondAttribute="leading" constant="12" id="V5c-TZ-I7l"/>
+                        <constraint firstAttribute="bottom" secondItem="efm-rK-bOR" secondAttribute="bottom" constant="12" id="egr-cC-kVE"/>
+                        <constraint firstItem="mU6-u6-9Ip" firstAttribute="top" secondItem="SGd-y3-dXL" secondAttribute="bottom" constant="24" id="npV-O1-oim"/>
+                        <constraint firstItem="efm-rK-bOR" firstAttribute="top" secondItem="SGd-y3-dXL" secondAttribute="bottom" constant="24" id="zWc-H2-KFW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="DarkGreenColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="buA-Ra-4fH" secondAttribute="bottom" id="NYC-VG-hZL"/>
+                <constraint firstItem="buA-Ra-4fH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mWV-fn-NeC"/>
+                <constraint firstAttribute="trailing" secondItem="buA-Ra-4fH" secondAttribute="trailing" id="p85-V2-IxY"/>
+                <constraint firstItem="buA-Ra-4fH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xmP-DO-mbo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carCatTitleLbl" destination="oSr-kQ-WcO" id="7bB-XU-5zv"/>
+                <outlet property="carCategoryLbl" destination="7sV-oB-Qja" id="pML-Fi-bpa"/>
+                <outlet property="descriptionLabel" destination="mU6-u6-9Ip" id="9SH-HU-dsy"/>
+                <outlet property="extraMoneyLbl" destination="BOt-Sr-wo4" id="e36-Jh-tLV"/>
+                <outlet property="extraMoneyTitleLbl" destination="dFt-D5-Dnt" id="7Td-WE-X4H"/>
+                <outlet property="mainView" destination="buA-Ra-4fH" id="vvJ-lK-YsW"/>
+                <outlet property="topAmountLbl" destination="AJd-nO-Gmh" id="rJV-MV-gAW"/>
+                <outlet property="topMainView" destination="SGd-y3-dXL" id="tAZ-rS-rCR"/>
+                <outlet property="totalKmLbl" destination="Ez1-0C-uCc" id="GtA-pP-UVR"/>
+                <outlet property="totalKmTitleLbl" destination="2ek-Ra-SvW" id="M8b-E8-caT"/>
+                <outlet property="totalTripCountLbl" destination="ykE-QT-ds5" id="gxf-TI-1TE"/>
+                <outlet property="totalTripTitleLbl" destination="kd7-qa-l2C" id="5We-9w-UDM"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="138.58695652173915"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="DarkGreenColor">
+            <color red="0.28627450980392155" green="0.62745098039215685" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

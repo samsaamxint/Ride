@@ -1,0 +1,383 @@
+/* 
+  Localizable.strings
+  Ride
+
+  Created by Mac on 07/11/2022.
+  Copyright © 2022 Xint Solutions. All rights reserved.
+*/
+
+//General
+"Internet connection is unstable" = "It Seems like your internet connection is unstable. Please try again";
+"CAPTAIN_" = "CAPTAIN";
+"RIDER_" = "RIDER";
+"Something went wrong" = "Something went wrong";
+
+//Onboarding
+"Skip" = "Skip";
+
+"Signup as" = "Signup as";
+"Login as" = "Login as";
+"Rider" = "Rider";
+"Captain" = "Captain";
+"AlreadyUser" = "Already a User?";
+"Dont have an account" = "Don’t have an account?";
+"Login" = "Login";
+"Sign Up" = "Sign Up";
+
+"Please Enter Your Details" = "Please Enter Your Details";
+"Mobile Number" = "Mobile Number";
+"Verify" = "Verify";
+
+"Enter OTP" = "Enter OTP";
+"Code sent to number" = "Code sent to number";
+"Edit" = "( Edit )";
+"Didnt receive the OTP" = "Didn’t receive the OTP?";
+"Done" = "Done";
+"Resend OTP" = "Resend OTP";
+
+//Driver Onboarding
+"enterDetails" = "Please Enter Your Details";
+"idNumber" = "ID Number";
+"licenseExpiry" = "License Expiry Date";
+"MobileNumber" = "Mobile Number";
+"Verify" = "Verify";
+
+"Selectyouroption" = "Select your option";
+"I Own a Car" = "I Own a Car";
+"I Own a Pickup" = "I Own a Pickup";
+
+"Subscriptions" = "Subscriptions";
+"Proceed" = "Proceed";
+
+"noCar" = "You don’t Have Any cars Registered to your iD number";
+"UseRideARide" = "Use Ride A Ride";
+
+"Confirm" = "Confirm";
+"AddCarSequence" = "Add Car Sequence No.";
+"SeqNo" = "Sequence No.";
+"OwnershipNo" = "Owner ID.";
+"findSequence" = "How to find car sequence number for your car";
+"LearnMore" = "Learn More";
+"AuthorizeVehicle" = "Authorize Vehicle";
+// Driver Own Car Dashboard
+"Your Application Under Process" = "Your Application Under Process";
+"Login and authorize on Absher portal" = "Login and authorize on Absher portal";
+"See Details" = "See Details";
+
+"Your Application is under review" = "Your Application is under review";
+"If you have received an SMS from AMN portal" = "If you have received an SMS from AMN portal, please follow the instructions to complete your request for registration";
+"Call Customer Care" = "Call Customer Care";
+"Customer Care Live Chat" = "Customer Care Live Chat";
+"Report a Problem" = "Report a Problem";
+
+"Your application is Approved" = "Your application is Approved";
+"Subscribe" = "Subscribe";
+
+"To Complete Your Registration" = "To Complete Your Registration";
+"You need to pay the fees for the first month" = "You need to pay the fees for the first month";
+"First month Fees" = "First month Fees";
+"Transaction Fees" = "Transaction Fees";
+"VAT Amount" = "VAT Amount";
+"Total Amount Payable" = "Total Amount Payable";
+"Balance" = "Balance";
+"PROMO" = "+PROMO";
+"Add Balance" = "Add Balance";
+"Pay with Card" = "Pay with Card";
+"Pay" = "Pay";
+
+//Driver RideARide Dashboard
+"Enter IBAN" = "Enter IBAN";
+"please enter your IBAN" = "In order to take your first ride please enter your IBAN";
+
+//Driver to Rider
+"There are no riders around" = "There are no riders around";
+"Drive to high-demand zones to find more riders" = "Drive to high-demand zones to find more riders";
+"Navigate to high demand zone" = "Navigate to high demand zone";
+
+"Estimate Earning" = "Estimate Earning";
+"Decline" = "Decline";
+"Accept" = "Accept";
+
+"Reached" = "Reached";
+"Arrived" = "Arrived";
+"Navigate to Rider" = "Navigate to Rider";
+"Open Location" = "Open Location";
+"Choose an app to open direction" = "Choose an app to open direction";
+"Google Maps" = "Google Maps";
+"Apple Maps" = "Apple Maps";
+"Cancel" = "Cancel";
+
+"Enter PIN from rider to start the ride" = "Enter PIN from rider to start the ride";
+"Start Ride" = "Start Ride";
+
+"Go straight" = "Go straight for ";
+"Dropping" = "Dropping";
+"End Ride" = "End Ride";
+
+"Rate your Rider" = "Rate your Rider";
+"Total Earning" = "Total Earning";
+"Total Loyalty Points Earned" = "Total Loyalty Points Earned";
+"Submit Rating" = "Submit Rating";
+
+"Drop-off Address Changed" = "Drop-off Address Changed!";
+"Rider changed the drop-off " = "Rider changed the drop-off location your new drop-off location is";
+"Navigate" = "Navigate";
+
+"Cancel Ride" = "Cancel Ride";
+
+//Rider Pickup
+"Pickup Location" = "Pickup Location";
+"Edit_" = "Edit";
+"Use Current Location" = "Use Current Location";
+"Confirm Pickup" = "Confirm Pickup";
+
+"Current Location" = "Current Location";
+"More available rides" = "More available rides";
+"Confirm Ride" = "Confirm Ride";
+"Insufficient balance" = "Insufficient balance";
+
+"Set Location" = "Set Location";
+"Confirm Location" = "Confirm Location";
+"Search" = "Search";
+"Unnamed Location" = "Unnamed Location";
+
+"Set Location from Map" = "Set Location from Map";
+"Where to" = "Where to?";
+"Change drop-off" = "Change drop-off";
+
+"Pickup Location" = "Pickup Location";
+
+"min away" = "min away";
+
+"Recommended for you" = "Recommended for you";
+
+//Rider To Driver
+"Enter Details" = "Enter Details";
+"Rider KYC Desc" = "In order to complete your next trip please fill the details";
+"Enter ID" = "Enter ID";
+"Date of Birth" = "Date of Birth";
+
+"Waiting for the confirmation" = "We are waiting for the confirmation from your driver";
+"Please try again" = "Oops! Please try again no captain found";
+"Try Again" = " Please Try Again";
+
+"Share this PIN" = "Share this PIN with your driver";
+"You are riding with" = "You are riding with";
+"Change" = "Change";
+"Help" = "Help";
+
+"Rate Your Captain" = "Rate Your Captain";
+"Total Payment" = "Total Payment";
+"Download VAT Invoice" = "Download VAT Invoice";
+
+"We are cancelling your ride" = "We are cancelling your ride";
+
+"Your new fare is" = "Your new fare is";
+"New fare" = "New fare";
+
+"Less than 1 min away" = "Less than 1 min away";
+"Take The Next Ride" = "Take The Next Ride";
+
+//Switch User
+"You are not a Captain" = "You are not a Captain!";
+"Please register as to use Captain mode" = "Please register for Captain mode.";
+"Register As Driver" = "Register As Captain";
+
+"Captain Mode Enabled" = "Captain Mode Enabled";
+"You can now earn money" = "Congratulations! You can now earn money by offering rides & deliveries";
+
+//Promocode
+"Add Promo Code" = "Add Promo Code";
+"Promo Code" = "Promo Code";
+"Apply" = "Apply";
+"Entered promo code is invalid" = "Entered promo code is invalid";
+"Please Enter Promo Code" = "Please Enter Promo Code";
+
+//Commmon Alert VCs
+"Topup Successful" = "Topup Successful";
+"SAR will be credited to your wallet shorlty" = "SAR %@ will be credited to your wallet shortly.";
+"Please try again after some time we are facing some server issues" = "Please try again after some time we are facing some server issues.";
+"Topup Failed" = "Topup Failed!";
+"Payment of first month fees has been paid successfully" = "Payment of first month fees has been paid successfully.";
+
+//Paymnet Methods
+"Add payment method" = "Add payment method";
+"Card Number" = "Card Number";
+"Name on Card" = "Name on Card";
+"Exp Date" = "Exp. Date";
+"CVV" = "CVV";
+"Save Card" = "Save Card";
+"Card Already exists" = "Card Already exists";
+"Please Enter valid CVV" = "Please Enter valid CVV";
+"Please Enter valid card number" = "Please Enter valid card number";
+
+"Enter Amount" = "Enter Amount";
+"Saved Cards" = "Saved Cards";
+"Add new" = "Add new";
+"Top Up with Apple Pay" = "Pay with Apple Pay";
+"No saved cards available" = "No saved cards available";
+"Please add amount for top up" = "Please add amount for top up.";
+"Topup" = "Topup";
+"Ride Topup" = "Ride Topup";
+"Unable to present Apple Pay authorization" = "Unable to present Apple Pay authorization.";
+"Unable to make Apple Pay transaction" = "Unable to make Apple Pay transaction.";
+"OK" = "OK";
+
+"Pending" = "Pending";
+"Successfull" = "Successfull";
+"Failed" = "Failed";
+"Topup Amount" = "Amount";
+"Time" = "Time";
+"Date" = "Date";
+"PM" = "PM";
+"AM" = "AM";
+
+"Choose Payment Method" = "Choose Payment Method";
+"Amount" = "Amount";
+"Pay with Apple Pay" = "Pay with Apple Pay";
+
+//Chat
+"Open Camera" = "Open Camera";
+"Open Gallery" = "Open Gallery";
+"Warning" = "Warning";
+"You dont have camera" = "You don't have camera";
+"Message is empty" = "Message is empty";
+"Write a message" = "Write a message...";
+
+//User Profile
+"My Rides" = "My Rides";
+"My Reports" = "My Reports";
+"App Setting" = "App Setting";
+"Customer Care" = "Customer Care";
+"Terms & Condition" = "Terms & Condition";
+"Privacy Policy" = "Privacy Policy";
+"Share With Friends" = "Share With Friends";
+"Log Out" = "Log Out";
+"Back" = "Back";
+"Version" = "Version %@";
+"View Details" = "View Details";
+
+"Update Profile" = "Update Profile";
+"Email Address" = "Email Address";
+"Update" = "Update";
+
+"Notifications" = "Notifications";
+
+"Delete" = "Delete";
+"Delete my account" = "Delete my account";
+"Rides Taken" = "Rides Taken";
+"Rides Given" = "Rides Given";
+"Trip Accepted" = "Trip Accepted";
+"Trip Rejected" = "Trip Rejected";
+"Trip Cancelled" = "Trip Cancelled";
+"Driver Arrived" = "Driver Arrived";
+"Trip Started" = "Trip Started";
+"Trip Completed" = "Trip Completed";
+"Trip Expired" = "Trip Expired";
+
+"Ride Details" = "Ride Details";
+"Your Captain" = "Your Captain";
+"Car Type" = "Car Type";
+"Car Number Plate" = "Car Number Plate";
+"Sub Total" = "Sub Total";
+"Tax Amount" = "VAT Amount";
+"Total Payment" = "Total Payment";
+"Total Loyalty Points Earned" = "Total Loyalty Points Earned";
+"Your Rider" = "Your Rider";
+"Share" = "Share";
+"Download" = "Download";
+"Image saved to gallery" = "Image saved to gallery";
+
+"We will help you" = "We will help you as soon as you describe the problem in the paragraph below";
+"Report" = "Report";
+"Please enter description" = "Please enter description";
+"Select Report type" = "Select Report type";
+"Report Saved" = "Report Saved";
+
+"Change Language" = "Change Language";
+
+"Whatsapp Care" = "Whatsapp Care";
+
+"Want to log out from Ride" = "Want to log out from RiDE?";
+
+"Dismiss" = "Dismiss";
+"Yes Log Out" = "Yes, Log Out";
+
+"Subscription" = "Subscription";
+"Remaining Days" = "Remaining Days";
+"Subscription Fee" = "Subscription Fee";
+"Auto Renew Subscription" = "Auto Renew Subscription";
+"Upcoming Renewal" = "Upcoming Renewal";
+"Renewal History" = "Renewal History";
+"Renew Subscription Now" = "Renew Subscription Now";
+"Scheduled On" = "Scheduled On";
+"Subscription Fee" = "Subscription Fee";
+"Cancel Subscription" = "Cancel Subscription";
+"Renewal Successful" = "Renewal Successful";
+
+"Report Detail" = "Report Detail";
+
+"Please select reason of cancelling" = "Please select reason of cancelling";
+"Payment Details" = "Payment Details";
+"Net Earning" = "Net Earning";
+"Update IBAN" = "Update IBAN";
+"Your Problem" = "Your Problem";
+"Your ride is cancelled" = "Your ride is cancelled";
+"Go back to Rider" = "Go back to Rider";
+"IBAN" = "IBAN : ";
+"Bank" = "Bank : ";
+"Topup Details" = "Topup Details";
+"Transfer Fee" = "Transfer Fee";
+"Continue" = "Continue";
+
+//invoice
+"The fare for the ride" = "The fare for the ride";
+"Invoice" = "Invoice";
+"Supplier name" = "Supplier name";
+"Address" = "Address ";
+"VAT Number" = "VAT Number";
+"Invoice Number" = "Invoice Number";
+"Invoice Issuance date" = "Invoice Issuance date";
+"Customer name" = "Customer name";
+"Service Offered" = "Service Offered";
+"Nature of Service" = "Nature of Service";
+"Unit Price" = "Unit Price";
+"Quantity" = "Quantity";
+"Item SubtotalEV" = "Item Subtotal
+(Excluding VAT)";
+"Item SubtotalIV" = "Item Subtotal
+(Including VAT)";
+"Total Amount" = "Total Amount";
+"Total (Excluding VAT)" = "Total (Excluding VAT)";
+"Discount" = "Discount";
+"Total VAT Amount
+(Excluding VAT)" = "Total VAT Amount
+(Excluding VAT)";
+"Total VAT" = "Total VAT";
+"Total Amount Due" = "Total Amount Due";
+"systemGenerated" = "This is a system generated document, hence there is no need for stamp or signatures";
+"Clear" = "Clear";
+"Cancel" = "Cancel";
+"Click Pay" = "Click Pay";
+"Your Application Is Rejected" = "Your Application Is Rejected";
+"Please register as captian to use pickup mode" = "Please register as captian to use pickup mode";
+
+//Alets
+"Delete Accounnt" = "Delete Accounnt";
+"DeleteAccountDesc" = "Do you want to request for delete account? It'll take 24 hrs to delete your account!";
+"Poor" = "Poor";
+"Bad" = "Bad";
+"Average" = "Average";
+"Good" = "Good";
+"Excellent" = "Excellent";
+"Estimated Time" = "Estimated Time ";
+"mins" = " min";
+"call center" = "Call Center";
+"share ride details" = "Share Ride Details";
+"call the police" = "Call the police - 911";
+
+//Location permission
+"location Permission title" = "Location Permission Required";
+"location permission desc" = "Please Always allow location permissions to track during trip from settings.";
+"location permission desc rider" = "Please allow location permissions to track during trip from settings.";
+"Settings" = "Settings";

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="103" contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardSwitchView" customModule="Ride" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGr-KD-jvy">
+                    <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEj-OY-NMs">
+                            <rect key="frame" x="0.0" y="0.0" width="122" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn5-FI-H3M">
+                                    <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                    <color key="backgroundColor" name="PrimaryGreen"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="RIDER">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="PrimaryLightTextColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="RIDER_"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapRiderBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="b9h-rY-b6e"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHz-7K-lph">
+                                    <rect key="frame" x="55" y="0.0" width="67" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="CAPTAIN">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="PrimaryLightTextColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="CAPTAIN_"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapDriverBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="WJs-ff-ey1"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcu-jq-5g9">
+                                    <rect key="frame" x="122" y="0.0" width="0.0" height="30"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="12"/>
+                                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="PICKUP">
+                                        <color key="titleColor" name="PrimaryLightTextColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="PrimaryLightTextColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapPickupBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pxs-zG-O4M"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="TEj-OY-NMs" firstAttribute="top" secondItem="IGr-KD-jvy" secondAttribute="top" id="1Ox-Lt-48c"/>
+                        <constraint firstAttribute="bottom" secondItem="TEj-OY-NMs" secondAttribute="bottom" id="92i-fR-BXr"/>
+                        <constraint firstAttribute="trailing" secondItem="TEj-OY-NMs" secondAttribute="trailing" id="Uzw-e6-foA"/>
+                        <constraint firstAttribute="height" constant="30" id="ZBd-aN-AaV"/>
+                        <constraint firstItem="TEj-OY-NMs" firstAttribute="leading" secondItem="IGr-KD-jvy" secondAttribute="leading" id="sNm-Wi-3Et"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IGr-KD-jvy" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2X9-tX-9Yi"/>
+                <constraint firstItem="IGr-KD-jvy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5rf-O3-rFj"/>
+                <constraint firstItem="IGr-KD-jvy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="iiz-yo-GNc"/>
+                <constraint firstItem="IGr-KD-jvy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mAs-bn-KcV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="contendView" destination="IGr-KD-jvy" id="bFp-rT-wZZ"/>
+                <outlet property="driverBtn" destination="qHz-7K-lph" id="SVT-sq-Fio"/>
+                <outlet property="pickupBtn" destination="Fcu-jq-5g9" id="mM2-1u-jaD"/>
+                <outlet property="riderBtn" destination="Gn5-FI-H3M" id="P2x-aq-lHA"/>
+                <outlet property="stackVIew" destination="TEj-OY-NMs" id="kpL-ru-0wn"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="324.45652173913044"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryGreen">
+            <color red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryLightTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NzQ-ZP-IDI">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Promo CodeVC-->
+        <scene sceneID="zet-YM-xi0">
+            <objects>
+                <viewController storyboardIdentifier="AddPromoCodeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NzQ-ZP-IDI" customClass="AddPromoCodeVC" customModule="Ride" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="inl-BI-H6c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeM-Za-I2V">
+                                <rect key="frame" x="10" y="652" width="394" height="194"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-CQ-fe8">
+                                        <rect key="frame" x="12" y="10" width="370" height="172"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qyE-LQ-yW0">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="26"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5S7-Qo-eIw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                                        <color key="backgroundColor" name="PrimaryLightTextColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="26" id="041-Uc-yI5"/>
+                                                            <constraint firstAttribute="height" constant="26" id="8nz-z7-94F"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="PrimaryDarkBG"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <imageReference key="image" image="arrow.left" catalog="system" symbolScale="small"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="SepratorColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="backBtnPressed:" destination="NzQ-ZP-IDI" eventType="touchUpInside" id="lkp-Zs-Cax"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Promo Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr2-8D-ZnX">
+                                                        <rect key="frame" x="34" y="0.0" width="336" height="26"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Add Promo Code"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9M-yg-iK6">
+                                                <rect key="frame" x="0.0" y="38" width="370" height="66"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-Du-fu6">
+                                                        <rect key="frame" x="0.0" y="10" width="370" height="56"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6Qh-bk-u0j">
+                                                                <rect key="frame" x="15" y="12" width="340" height="32"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Promo Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kqI-oI-RDQ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="340" height="32"/>
+                                                                        <color key="textColor" name="PrimaryDarkBG"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="6Qh-bk-u0j" secondAttribute="bottom" constant="12" id="2MT-Z6-2wH"/>
+                                                            <constraint firstAttribute="height" constant="56" id="3Tv-Y3-65Y"/>
+                                                            <constraint firstItem="6Qh-bk-u0j" firstAttribute="leading" secondItem="JcP-Du-fu6" secondAttribute="leading" constant="15" id="6Ow-At-DdT"/>
+                                                            <constraint firstItem="6Qh-bk-u0j" firstAttribute="top" secondItem="JcP-Du-fu6" secondAttribute="top" constant="12" id="p1Q-DW-cUy"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6Qh-bk-u0j" secondAttribute="trailing" constant="15" id="zLK-Wu-iiJ"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="SepratorColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="She-Km-boe">
+                                                        <rect key="frame" x="11" y="2" width="78" height="16"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOV-BH-j2b">
+                                                                <rect key="frame" x="4" y="0.0" width="70" height="16"/>
+                                                                <color key="backgroundColor" name="PrimaryLightTextColor"/>
+                                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                                                <color key="textColor" name="PrimaryDarkBG"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Promo Code"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="TOV-BH-j2b" secondAttribute="bottom" id="1AJ-ud-aZ9"/>
+                                                            <constraint firstItem="TOV-BH-j2b" firstAttribute="top" secondItem="She-Km-boe" secondAttribute="top" id="9Ob-vx-Kpl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="TOV-BH-j2b" secondAttribute="trailing" constant="4" id="MAE-c5-2gX"/>
+                                                            <constraint firstItem="TOV-BH-j2b" firstAttribute="leading" secondItem="She-Km-boe" secondAttribute="leading" constant="4" id="tCA-4M-41N"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="JcP-Du-fu6" secondAttribute="trailing" id="3Uj-ob-JjH"/>
+                                                    <constraint firstItem="JcP-Du-fu6" firstAttribute="leading" secondItem="M9M-yg-iK6" secondAttribute="leading" id="5cY-j0-z5X"/>
+                                                    <constraint firstItem="She-Km-boe" firstAttribute="centerY" secondItem="JcP-Du-fu6" secondAttribute="top" id="7K8-Gk-QZg"/>
+                                                    <constraint firstItem="She-Km-boe" firstAttribute="leading" secondItem="M9M-yg-iK6" secondAttribute="leading" constant="11" id="ErL-ya-LU1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JcP-Du-fu6" secondAttribute="bottom" id="ZCL-SR-0NG"/>
+                                                    <constraint firstItem="JcP-Du-fu6" firstAttribute="top" secondItem="M9M-yg-iK6" secondAttribute="top" constant="10" id="fkj-oE-iIz"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-2e-Pvk">
+                                                <rect key="frame" x="0.0" y="116" width="370" height="56"/>
+                                                <color key="backgroundColor" name="PrimaryBtnBg"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="t4T-dQ-au4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Apply">
+                                                    <color key="titleColor" name="SepratorColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Apply"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="applyPressed:" destination="NzQ-ZP-IDI" eventType="touchUpInside" id="09x-xZ-XHf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PtU-CQ-fe8" firstAttribute="leading" secondItem="NeM-Za-I2V" secondAttribute="leading" constant="12" id="JfX-cy-VMR"/>
+                                    <constraint firstItem="PtU-CQ-fe8" firstAttribute="top" secondItem="NeM-Za-I2V" secondAttribute="top" constant="10" id="UkE-bK-GHb"/>
+                                    <constraint firstAttribute="trailing" secondItem="PtU-CQ-fe8" secondAttribute="trailing" constant="12" id="ZUg-vR-q8j"/>
+                                    <constraint firstAttribute="bottom" secondItem="PtU-CQ-fe8" secondAttribute="bottom" constant="12" id="iVY-kc-jz4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RSQ-dK-1iq"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NeM-Za-I2V" firstAttribute="leading" secondItem="inl-BI-H6c" secondAttribute="leading" constant="10" id="koS-Au-4Kh"/>
+                            <constraint firstItem="RSQ-dK-1iq" firstAttribute="bottom" secondItem="NeM-Za-I2V" secondAttribute="bottom" constant="16" id="qgJ-96-yHj"/>
+                            <constraint firstAttribute="trailing" secondItem="NeM-Za-I2V" secondAttribute="trailing" constant="10" id="t21-qa-Pva"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HHc-v3-pm4"/>
+                    <connections>
+                        <outlet property="applyBtn" destination="CQW-2e-Pvk" id="egH-NP-0ED"/>
+                        <outlet property="backBtn" destination="5S7-Qo-eIw" id="cLV-1J-pmX"/>
+                        <outlet property="promoCodeLbl" destination="TOV-BH-j2b" id="G0q-e4-a72"/>
+                        <outlet property="promoCodeTF" destination="kqI-oI-RDQ" id="uxl-mK-Bgk"/>
+                        <outlet property="promoCodeView" destination="JcP-Du-fu6" id="fww-x5-U0D"/>
+                        <outlet property="titleLbl" destination="dr2-8D-ZnX" id="C54-Rr-3Bt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6b-T0-rUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <namedColor name="PrimaryBtnBg">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryDarkBG">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryLightTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SepratorColor">
+            <color red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
